@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Portfolio </title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/2c261a4df0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.jpg" alt="logo" width="165px">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I am <span>Sagar</span><br> Sondge from India</h1>
+                <p>Front-End Developer</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.jpg" alt="user image" height="550px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me </h1>
+                    <p>I'm a dedicated Front-end developer with a passion for creating user-friendly and visually appealing.
+                    Proficient in HTML, CSS, and JavaScript, I love solving problems and continuously learning new technologies.
+                    My focus is on delivering high-quality projects that enhance user experience and meet client goals.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')"> Skills </p>
+                            <p class="tab-links" onclick="openTab('experience')"> Experience </p>
+                            <p class="tab-links" onclick="openTab('education')"> Education </p>
+                        </div>
+                        
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>HTML, CSS, JavaScript</span><br>Front-end Development</li>
+                                <li><span>Git, GitHub</span><br>Version Control System</li>
+                                <li><span>SQL</span><br>Database Management</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021 - Current </span><br>Computer Engineering at Silver Oak University</li>
+                                <li><span>2020 - 2021 </span><br>12<sup>th</sup> Science from R.H.H.S</li>
+                                <li><span>2018 - 2019 </span><br>10<sup>th</sup> from St.joseph High Secondary School</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="./images/pro-1.png" alt="project-img">
+                    <div class="layer">
+                        <h3> <b>Drum kit</b></h3>
+                        <p>Created a virtual drum kit using HTML, CSS, and JavaScript, allowing users to play various drum sounds by
+                            clicking on-screen elements or using keyboard keys. Implemented audio playback and keypress event listeners
+                            for an interactive experience.</p>
+                        <a href="./Drum_kit/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="./images/pro-2.png" alt="project-img" >
+                    <div class="layer">
+                        <h3><b>Amazon Clone</b></h3>
+                        <p>Developed a responsive Amazon clone using HTML and CSS. A seamless user experience using Flexbox for responsive design. Enhanced interactivity and
+                            maintaining well-organized code for scalability and easy updates.
+                            </p>
+                        <a href="./Amazon clone/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div> 
+                </div>
+                <div class="project">
+                    <img src="./images/pro-3.jpeg
+                    " alt="project-img">
+                    <div class="layer">
+                        <h3>  <b>Tic Tac Toe Game</b></h3>
+                        <p>Developed a fully functional Tic Tac Toe game using HTML, CSS, and JavaScript. 
+                        Designed a responsive game board with intuitive UI, implemented game logic for player turns, win conditions, and tie scenarios. </p>
+                        <a href="./Tic-Tac-Toe/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>   
+                </div>
+            </div>
+            <a href="#" class="btn"> See more </a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>mr.sagar.2k3@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8487062939</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sagar-sondge-7419b8250" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./Sagar Sondge.pdf" target="_blank" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&#169;Copyright Made with <i class="fa-solid fa-heart"></i> by Sagar</p>
+    </footer>   
+
+</body>
+</html>
